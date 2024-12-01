@@ -1,0 +1,116 @@
+.courses-container {
+  display: grid;
+  gap: 10px;
+}
+
+.header {
+  height: 70vh;
+  background-image: url("../../assets/logo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #0f05d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
+  opacity: 80%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header .logo {
+    max-width: 120px;
+  }
+}
+
+.course-card {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: center; 
+}
+
+.course-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.course-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.course-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+.course-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.course-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.categories-count {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.course-card:hover .categories-count {
+  opacity: 1;
+}
+
+.view-course-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.course-card:hover .view-course-button {
+  opacity: 1;
+}

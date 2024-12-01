@@ -1,0 +1,48 @@
+.informatique-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    gap: 20px; /* Spacing between the cards */
+  }
+  
+  .semestre-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .semestre-card h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .semestre-card p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .semestre-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .semestre-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .semestre-button:hover {
+    background-color: #0056b3;
+  }
+  
