@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const SECRET_KEY = "mysecretkey"; // Replace with an environment variable in production
+const SECRET_KEY = "mysecretkey"; 
 
 // MySQL connection
 const db = mysql.createConnection({
